@@ -1,0 +1,109 @@
+/* Start Navbar */
+/* End Navbar */
+
+/* Start Home */
+.home {
+  text-shadow: 1px 1px 15px black;
+}
+
+.home .image {
+  max-height: 700px;
+}
+
+.home .caption-home {
+  top: 50%;
+}
+
+.home .btn {
+}
+
+.home .overlay-home {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* End Home */
+
+/* Start Services */
+.services {
+  min-height: 600px;
+}
+
+.services i:hover {
+  color: #0d6efd;
+}
+/* End Services */
+
+/* Start Intermezzo */
+.jumbotron {
+  min-height: 350px;
+  background-image: url(image/Intermezzo/1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  text-shadow: 1px 1px 5px black;
+}
+
+/* End Intermezzo */
+
+/* Start Shop */
+.shop {
+  min-height: 700px;
+}
+
+.shop .card {
+  box-shadow: 0px 0px 7px rgba(225, 225, 225, 0.8);
+}
+
+/* Start Shop > Overlay */
+.overlay {
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+  opacity: 0;
+  transition: 1s;
+}
+
+.overlay:target {
+  width: auto;
+  height: auto;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.overlay:target img {
+  box-shadow: 1px 1px 5px rgba(225, 225, 225, 0.8);
+  max-height: 100%;
+  margin-top: 40%;
+}
+/* End Shop > Overlay */
+/* End Shop */
+
+/* Start Contact */
+.contact {
+  min-height: 600px;
+}
+/* End Contact */
+
+/* Start Footer */
+.footer i:hover {
+  color: #0d6efd;
+}
+/* End Footer */
+
+/* Start Button To Top */
+.go-top {
+  width: fit-content;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+/* End Button To Top */
