@@ -1,62 +1,342 @@
-/* Start Jumbotron/Home */
-.jumbotron {
-  display: flex;
-  background-image: url(img/jumbotron.jpg);
+:root {
+  --first: #b4b2ab;
+  --second: #1d1f12;
+  --third: #5f6347;
+  --fourth: #5e4e39;
+  font-family: "Chivo", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+/* Start Fonts */
+/* font-family: "Chivo", sans-serif;
+font-family: "Playfair Display", serif; */
+/* End Fonts */
+
+/* Start Navbar */
+
+.navbar {
+  font-family: "Chivo", sans-serif;
+  box-shadow: 0 1px 3px black;
+}
+
+.navbar.navbar-custom {
+  background-color: var(--second);
+}
+
+.navbar-custom a {
+  color: var(--first);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(180, 178, 171)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: var(--first);
+}
+
+.navbar a:hover {
+  color: #abadb4;
+}
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a:hover {
+  background-color: var(--third);
+}
+
+.navbar .nav-link:link {
+  color: var(--first);
+}
+
+.navbar .nav-link:visited {
+  color: var(--first);
+}
+/* End Navbar */
+
+/* Start Home */
+.home {
+  background-image: url(img/Home.jpg);
+  min-height: 650px;
   background-size: cover;
-  background-position: center center;
-  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+  background-position: 0 -55px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  margin-top: 60px;
+  border-bottom: 7px solid var(--third);
+  overflow: hidden;
 }
 
-.overlay {
+.home::after {
+  content: "";
+  background-color: rgba(180, 178, 171, 0.5);
+  position: absolute;
   top: 0;
-  bottom: 0;
-  left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  left: 0;
+  bottom: 0;
 }
 
-#home .up-overlay {
+.home > * {
   z-index: 1;
 }
-/* End Jumbotron/Home */
+
+.home h1,
+.home p {
+  color: white;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.home h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4em;
+}
+
+.home p {
+  font-size: 1.4em;
+}
+
+.home .my-button {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+  background-color: var(--second);
+  color: white;
+}
+
+.home .my-button:hover {
+  background-color: var(--third);
+}
+
+.home h1,
+.home p,
+.home button {
+  opacity: 0;
+  transition: opacity 1.2s;
+}
+
+.home .home-pop {
+  opacity: 1;
+}
+/* End Home */
+
+hr {
+  width: 100%;
+}
 
 /* Start About */
-#about {
-  min-height: 600px;
+.about {
+  background-color: var(--second);
+  color: var(--first);
+  padding-top: 2em;
+  min-height: 650px;
+  padding-bottom: 2em;
+  border-bottom: 7px solid var(--third);
+}
+
+h2,
+.about h4 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+.about .about-header,
+.about p {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: transform 1.5s, opacity 1s;
+}
+
+.about .find-me {
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.about .about-pop {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.find-me {
+  /* border-left: 1px solid black; */
+  border: 4px solid var(--third);
+  background-color: var(--first);
+  color: var(--second);
+  min-height: 300px;
+  position: sticky;
+  top: 65px;
+  padding-top: 30px;
+  border-radius: 20px;
+}
+
+.find-me a {
+  color: var(--second);
+  font-size: 1.7em;
+}
+.find-me a:hover {
+  color: var(--third);
+}
+
+.download-cv .btn {
+  background-color: var(--second);
+  color: var(--first);
+}
+
+.download-cv .btn:hover {
+  background-color: var(--third);
 }
 /* End About */
 
 /* Start Services */
-#services {
-  min-height: 400px;
-  background-color: #555;
+.services {
+  background-color: var(--first);
+  color: var(--second);
+  min-height: 650px;
+  border-bottom: 7px solid var(--third);
+  padding-top: 2em;
+  padding-bottom: 3em;
 }
 
-.services i:hover {
-  color: #0d6efd;
+.services .services-header {
+  margin-bottom: 3em;
 }
+
+.services .services-header,
+.services .thumbnail,
+.services figure {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: 0.8s;
+}
+.services .services-pop {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.services hr {
+  width: 25%;
+  margin: auto;
+}
+
+.services .thumbnail {
+  background-color: var(--second);
+  color: var(--first);
+  border: 5px solid var(--third);
+  padding: 1.6em;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.services .thumbnail:hover {
+  transform: scale(1.15);
+}
+
+.services figure {
+  background-color: var(--second);
+  color: var(--first);
+  border: 5px solid var(--third);
+  border-radius: 10px;
+  padding: 1.2em;
+  box-sizing: border-box;
+}
+
+.services blockquote {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+.services figcaption {
+  font-size: 1.2em;
+}
+
 /* End Services */
 
-/* Start Contact */
-#contact a {
-  color: #000;
+/* Start Footer */
+.footer {
+  background-color: var(--second);
+  color: var(--first);
 }
 
-#contact a:hover {
-  color: #0d6efd;
+.footer .col-3 {
+  width: fit-content;
+  font-size: 1.4em;
 }
-/* End Contact */
 
-/* Start Responsive */
-@media screen and (min-width: 576px) {
-  .jumbotron {
-    min-height: 600px;
+.footer .col-3 a {
+  color: var(--first);
+}
+
+.footer .col-3 a:hover {
+  color: var(--third);
+}
+/* End Footer */
+
+/* Start Modal */
+.my-modal-button {
+  background-color: var(--second);
+  color: white;
+}
+
+.my-modal-button:hover {
+  background-color: var(--third);
+}
+/* End Modal */
+
+/* Start Loading */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--first);
+  z-index: 9999;
+  display: flex;
+}
+
+.loading .loading-circle {
+  border-top: 5px solid var(--second);
+  border-right: 5px solid var(--second);
+  border-bottom: 5px solid var(--second);
+  border-left: 5px solid var(--first);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  animation: loadingSpin 0.8s linear infinite;
+}
+
+.loading.loading-hide {
+  display: none;
+}
+/* End Loading */
+@keyframes loadingSpin {
+  100% {
+    transform: rotate(360deg);
   }
 }
 
 @media screen and (max-width: 768px) {
-  #about .container .container-about {
+  .home > * {
+    text-align: center;
+  }
+
+  .about {
     text-align: center;
   }
 }
-/* End Responsive */

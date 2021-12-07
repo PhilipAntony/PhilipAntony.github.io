@@ -6,195 +6,271 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <!-- Main Style -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet" />
+
+    <!-- My Style -->
     <link rel="stylesheet" href="style.css" />
 
-    <title>Portfolio | Philip Antony</title>
+    <title>Philip Antony | Portfolio</title>
   </head>
   <body>
-    <!-- Start Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Start Loading ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="loading">
+      <div class="loading-circle"></div>
+    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End Loading ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Start Navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-toggler navbar-custom">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">PhilipAntony</a>
+        <a class="navbar-brand nav-link" href="#home"><img src="img/logo/Philip.png" alt="" width="45" height="36" class="d-inline-block align-text-top" /> PhilipAntony</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">ABOUT</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">SERVICES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">CONTACT</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- End Navbar -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End Navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Start Home ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="home align-items-center" id="home">
+      <div class="container">
+        <div class="row mb-2">
+          <div class="col"><h1 class="home-h1">WEB DEVELOPER</h1></div>
+        </div>
 
-    <!-- Start Jumbotron/Home -->
-    <section id="home" class="jumbotron jumbotron-fluid text-center text-light p-5 position-relative">
-        <div class="overlay position-absolute">
+        <div class="row mb-2">
+          <div class="col-md-5">
+            <p class="home-paragraph">Hello, my name is Philip Antony. I am a Web Developer. I code and develope simple things.</p>
+          </div>
         </div>
-        <div class="container m-auto up-overlay">
-            <h1 class="display-4">Hello I'm Philip</h1>
-            <h2 class="display-6">Web Designer</h3>
-            <p class="lead">I design and code simple things, and I love doing it.</p>
-            <button type="button" class="btn btn-primary mt-5 fs-5">View Portfolio</button>
-        </div>
-    </section>
-    <!-- End Jumbotron/Home -->
 
-    <!-- Start About -->
-    <section id="about" class="p-5">
-        <div class="container mt-3">
-            <div class="row justify-content-center">
-                <div class="col-md-4 mb-4 text-center mb-3">
-                    <img src="img/myPic.jpg" class="img-fluid rounded-circle" alt="PhilipAntony">
-                </div>
-                <div class="col-md-6">
-                    <div class="container container-about">
-                        <div class="row">
-                            <div class="col"><h2>About Me</h2></div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptatibus sed impedit consectetur eaque tenetur consequatur provident aut ducimus excepturi corrupti labore, neque cum, quisquam earum iusto maiores esse sunt aspernatur assumenda? Nam amet sint repellendus enim voluptatum minus error totam! Quos, illum sequi. Ea velit consequuntur reiciendis totam molestiae.</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nulla nostrum sit cum eaque voluptates dolor delectus deserunt quam sed a, temporibus, et distinctio nisi quas officiis, iure voluptas. Possimus.</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <button type="button" class="btn btn-primary me-2">Download CV</button>
-                                <button type="button" class="btn btn-outline-primary">Hire Me</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End About -->
-
-    <!-- Start Services -->
-    <section id="services" class="services text-light p-5">
-        <div class="container text-center mt-3">
-            <div class="row mb-4">
-                <div class="col">
-                    <h2>Services</h2>
-                </div>
-            </div>
-            <div class="row justify-content-around">
-                <div class="col-md-3 px-2 mb-3">
-                    <i class="bi bi-pencil-square fs-1"></i>
-                    <h4>Web Design</h4>
-                    <p>I value simple website structure, clean design patterns, and thoughtful interactions.</p>
-                </div>
-                <div class="col-md-3 px-2 mb-3">
-                    <i class="bi bi-globe fs-1"></i>
-                    <h4>Front End</h4>
-                    <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-                </div>
-                <div class="col-md-3 px-2 mb-3">
-                    <i class="bi bi-gear fs-1"></i>
-                    <h4>Back End</h4>
-                    <p>Now I'm still in the process of learning back end web development.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Services -->
-
-    <!-- Start Contact -->
-    <section id="contact" class="p-5">
-        <div class="container text-center mt-3">
-            <div class="row mb-5">
-                <div class="col">
-                    <h2>Contact</h2>
-                </div>
-            </div>
-        </div>
         <div class="row">
-            <div class="col-lg-6 mb-5">
-                <h4 class="text-center mb-3">Leave a Message</h4>
-                <form>
-                    <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Your Email">
-                    </div>
-                    <div class="mb-3">
-                      <label for="exampleInputNames" class="form-label">Name</label>
-                      <input type="text" class="form-control" id="exampleInputNames" placeholder="Enter Your Name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" placeholder="Enter Your Message" id="message" rows="10"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-            </div>
-            <div class="col-lg-6">
-                <div class="container">
-                    <div class="row mb-3">
-                        <div class="col">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63751.68699884049!2d99.02581282569774!3d2.9641079973290543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031845c5ac9d49d%3A0xec50414d3469acee!2sPematang%20Siantar%2C%20Kota%20Pematang%20Siantar%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1628753556926!5m2!1sid!2sid" style="width:100%; min-height: 350px;"></iframe>
-                        </div>
-                    </div>
-                    <div class="row mb-3 text-center">
-                        <div class="col">
-                            <h4>Chat Me!</h4>
-                        </div>
-                    </div>
-                    <div class="row text-center">
-                        <div class="col-xl-4 mb-3">
-                            <a href="http://instagram.com/philipantony05" target="_blank" class="text-decoration-none fs-6">
-                                <i class="bi bi-instagram me-1"></i>@philipantony05
-                            </a>
-                        </div>
-                        <div class="col-xl-4 mb-3">
-                            <a href="http://www.facebook.com/philipantony05" target="_blank" class="text-decoration-none fs-6">
-                                <i class="bi bi-facebook me-1"></i>Philip Antony
-                            </a>
-                        </div>
-                        <div class="col-xl-4 mb-3">
-                            <a href="http://twitter.com/PhilipAntony05?s=09" target="_blank" class="text-decoration-none fs-6">
-                                <i class="bi bi-twitter me-1"></i>@philipantony05
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="col-md-5">
+            <button type="button" class="btn my-button" data-bs-toggle="modal" data-bs-target="#hireMeModal">Contact Me!</button>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- End Contact -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End Home ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Start About ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="container">
+              <div class="row mb-4">
+                <div class="col-md-12 about-header">
+                  <h2>About</h2>
+                  <hr />
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-md-12">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, accusamus laudantium eum natus vitae sit fugiat veritatis. Tempore alias ipsa quisquam id amet earum cum! Repudiandae, dignissimos eum perspiciatis libero
+                    repellendus fuga aperiam, tempore consectetur sed numquam iusto. Similique vitae, quaerat doloribus, quia delectus vero sequi ab nisi, sit perspiciatis amet natus voluptate facilis quasi debitis dolorum. Error modi,
+                    distinctio exercitationem voluptates id earum consequuntur enim consectetur amet commodi tempore recusandae ab. Perferendis magnam laudantium odit unde explicabo eligendi porro.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12 mb-5">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum temporibus laudantium debitis sapiente odit maxime, dolore asperiores ipsam fugiat sed doloribus tempora, laboriosam placeat voluptatem! Nihil cum facilis
+                    odio architecto numquam qui recusandae assumenda corrupti animi, aliquid fugiat officiis possimus incidunt impedit voluptates dolorem, consequatur tenetur exercitationem vel dolore reprehenderit perspiciatis mollitia?
+                    Veritatis, vel hic neque aliquid soluta voluptate deserunt ab, reprehenderit laboriosam doloribus eum quis minus accusamus iste aperiam debitis fugiat accusantium sapiente exercitationem facere nam consectetur atque.
+                    Officia explicabo impedit, molestias perferendis incidunt tempora consequatur aliquid quae ducimus delectus? Molestiae nesciunt deserunt deleniti, necessitatibus cumque pariatur dicta quam.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="container find-me">
+              <div class="row">
+                <div class="col">
+                  <h4>Find me</h4>
+                  <hr />
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col-3">
+                  <a target="_blank" href="https://www.instagram.com/philipantony05/"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="col-3">
+                  <a target="_blank" href="https://www.facebook.com/PhilipAntony05/"><i class="bi bi-facebook"></i></a>
+                </div>
+                <div class="col-3">
+                  <a target="_blank" href="https://www.twitter.com/philipantony05/"><i class="bi bi-twitter"></i></a>
+                </div>
+                <div class="col-3">
+                  <a target="_blank" href="https://www.github.com/PhilipAntony/"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <h4>Download</h4>
+                  <hr />
+                </div>
+              </div>
+              <div class="row download-cv">
+                <div class="col">
+                  <button type="button" class="btn btn-lg">Download CV</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End About ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Start Services ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="services text-center" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col services-header">
+            <h2>Services</h2>
+            <hr />
+          </div>
+        </div>
+
+        <div class="row justify-content-around">
+          <div class="col-md-3 mb-3">
+            <div class="thumbnail">
+              <i class="bi bi-pencil-square fs-1"></i>
+              <h4>Web Design</h4>
+              <p>I value simple website structure, clean design patterns, and thoughtful interactions.</p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="thumbnail">
+              <i class="bi bi-globe fs-1"></i>
+              <h4>Front End</h4>
+              <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+            </div>
+          </div>
+          <div class="col-md-3 px-2 mb-3">
+            <div class="thumbnail">
+              <i class="bi bi-gear fs-1"></i>
+              <h4>Back End</h4>
+              <p>Now I'm still in the process of learning back end web development.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col">
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <p>“We see our customers as invited guests to a party, and we are the hosts. It’s our job to make the customer experience a little bit better.”</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">Jeff Bezos</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ End Services ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- Start Footer -->
-    <footer class="bg-dark text-light text-center p-5">
-        <h2>&copy;Copyright Philip Antony 2021</h2>
+    <footer class="footer p-4 text-center" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h6>&copy;Copyright 2021 | Philip Antony</h6>
+            <hr />
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <a href=""><i class="bi bi-instagram"></i></a>
+          </div>
+          <div class="col-3">
+            <a href=""><i class="bi bi-facebook"></i></a>
+          </div>
+          <div class="col-3">
+            <a href=""><i class="bi bi-twitter"></i></a>
+          </div>
+          <div class="col-3">
+            <a href=""><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- End Footer -->
+
+    <!-- Start Modal -->
+    <div class="modal fade" id="hireMeModal" tabindex="-1" aria-labelledby="hireMeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="hireMeModalLabel">Contact Me</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Start Form -->
+            <form>
+              <div class="mb-3">
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" />
+                </div>
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <div id="emailHelp" class="form-text mb-3">We'll never share your email with anyone else.</div>
+
+                <label for="message">Message</label>
+                <textarea class="form-control" placeholder="Leave a message here" id="message"></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn my-modal-button">Send Message</button>
+              </div>
+            </form>
+            <!-- End Form -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+
+    <!-- My Script -->
+    <script src="script.js"></script>
   </body>
 </html>
