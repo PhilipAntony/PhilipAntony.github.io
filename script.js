@@ -78,7 +78,7 @@ window.addEventListener("scroll", function () {
     findMe.classList.add("about-pop");
   }
 
-  if (wScroll <= sectionAbout.offsetTop - 700) {
+  if (wScroll <= sectionAbout.offsetTop - 600) {
     aboutHeader.classList.remove("about-pop");
     aboutP[0].classList.remove("about-pop");
     aboutP[1].classList.remove("about-pop");
