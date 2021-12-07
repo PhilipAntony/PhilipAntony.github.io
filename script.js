@@ -130,7 +130,6 @@ document.addEventListener("click", function (e) {
     let hrefId = e.target.getAttribute("href");
 
     let hrefDestination = document.querySelector(hrefId);
-    console.log(hrefDestination);
     let screen$768px = window.matchMedia("(max-width: 768px)");
     if (screen$768px.matches) {
       window.scrollTo(0, hrefDestination.offsetTop - 120);
